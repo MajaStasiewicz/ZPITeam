@@ -1,0 +1,69 @@
+{% load static %}
+<!doctype html>
+<html>
+     <head>
+          <meta charset="UTF-8" />
+          <title>O PROJEKCIE</title>
+          <link rel="stylesheet" href="{%static 'css/strona.css'%}">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <script src="../custom-scripts.js" defer></script>
+     </head>
+     <body>
+               
+        <header>
+            <div class="header-left">
+                <div class="logo">FOCzki</div>
+                <nav>
+                    <ul>
+                        <li><a class="active" href="/home/">HOME</a></li>
+                        <li><a href="/oNas/">O NAS</a></li>
+                        <li><a href="/oProjekcie/">O PROJEKCIE</a></li>
+                        <li><a href="/spotkania/">SPOTKANIA</a></li>
+                        <li><a href="/dokumenty/">DOKUMENTY</a></li>
+                        <li><a href="/galeria/">GALERIA</a></li>
+                        <li><a href="/kontakt/">KONTAKT</a></li>
+                    </ul>
+                    <div class="login-signup">
+                    </div>
+                </nav>
+            </div>
+            <div class="header-right">
+                <div class="login-signup">
+                </div>
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </header>
+
+
+        <div class="opis1">
+            Przedstawiamy nowoczesne biurko, rozwiązanie, którego jeszcze nie ma na rynku. 
+            Pracodawca nie będzie musiał już dłużej martwić się przestrzeganiem zasad BHP przez pracownika. 
+            Nasze biurko posiada kilka funkcjonalności, które są unikatowe i nie dostępne w żadnym produkcie na polskim rynku. 
+            Nasze biurko dostosowywane będzie wysokością do wzrostu klienta, który będzie chciał je nabyć. 
+            Ponadto biurko będzie sugerować pracownikowi zrobienie przerwy 
+            (zgodnie z zasadami BHP). Znajdować się będzie również dozownik do napojów, aby w wirze pracy nikt nie zapomniał o nawadnianiu.
+            Jeśli klient będzie potrzebował naładować telefon to również nie będzie stanowiło problemu, ponieważ w wyposażeniu naszego 
+            biurka znajdować się będzie ładowarka indukcyjna. 
+            Warto również zwrócić uwagę na czujniki znajdujące się w naszym produkcie, takie jak: czujnik odległości (dzięki, któremu
+            komputer zostanie zablokowany jeśli się od niego oddalimy), czujnik dźwięku (reakcja biurka np: na klaskanie) oraz czujnik
+            mierzenia oświetlenia (będzie włączał lampkę jeśli w pomieszczeniu będzie zbyt ciemno).
+            Jeśli posiadacz biurka potrzebował będzie gniazdka, to również nie problem. Nasze biurko posiada ich aż 4 oraz dwa wejścia USB.
+            Nasz produkt wyposażony będzie w lampki ledowe dodające mu uroku.
+        </div>
+
+         <footer class="page-footer">
+            <p>FUTURE OFFICE CREATORS (FOCzki)</p>
+         </footer>
+         <script>
+            hamburger = document.querySelector(".hamburger");
+            nav = document.querySelector("nav");
+            hamburger.onclick = function() {
+                nav.classList.toggle("active");
+            }
+        </script>
+     </body>
+</html>

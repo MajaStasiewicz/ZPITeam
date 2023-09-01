@@ -1,0 +1,83 @@
+{% load static %}
+<!doctype html>
+<html>
+<head>
+          <meta charset="UTF-8" />
+          <title>DOKUMENTY</title>
+          <link rel="stylesheet" href="{%static 'css/strona.css'%}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../custom-scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo">FOCzki</div>
+            <nav>
+                <ul>
+                    <li><a class="active" href="/home/">HOME</a></li>
+                    <li><a href="/oNas/">O NAS</a></li>
+                    <li><a href="/oProjekcie/">O PROJEKCIE</a></li>
+                    <li><a href="/spotkania/">SPOTKANIA</a></li>
+                    <li><a href="/dokumenty/">DOKUMENTY</a></li>
+                    <li><a href="/galeria/">GALERIA</a></li>
+                    <li><a href="/kontakt/">KONTAKT</a></li>
+                </ul>
+                <div class="login-signup">
+                </div>
+            </nav>
+        </div>
+        <div class="header-right">
+            <div class="login-signup">
+            </div>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </header>
+    
+    <h2 class="dokheader">Sprawozdanie semestralne - Semestr letni</h2>
+    <div class="btnbox">
+        <div class="btnbox2">
+            <form>
+                <button class="pobierz" onclick=" window.open('https://ukwbydgoszcz.sharepoint.com/:b:/s/S_ZPI.gr1_2023/EU04KLfA6HtFusYNYc1sYKwBwg9SvcDLrPFEL9kRHI_U5A?e=weGZL3', '_blank'); return false;">
+                    <b>Pobierz sprawozdanie</b>
+                </button>
+            </form>
+        </div>
+    </div>
+    <h2 class="dokheader">Sprawozdanie semestralne - Semestr zimowy</h2>
+    <div class="btnbox">
+        <div class="btnbox2">
+            <form>
+                <button class="pobierz" onclick=" window.open('https://wompampsupport.azureedge.net/fetchimage?siteId=7575&v=2&jpgQuality=100&width=700&url=https%3A%2F%2Fi.kym-cdn.com%2Fphotos%2Fimages%2Fnewsfeed%2F002%2F414%2F472%2F7c7.jpg', '_blank'); return false;">
+                    <b>Pobierz sprawozdanie</b>
+                </button>
+            </form>
+        </div>
+    </div>
+    <h2 class="dokheader">Prezentacja - Semestr zimowy</h2>
+    <div class="btnbox">
+        <div class="btnbox2">
+            <form>
+                <button class="pobierz" onclick=" window.open('https://wompampsupport.azureedge.net/fetchimage?siteId=7575&v=2&jpgQuality=100&width=700&url=https%3A%2F%2Fi.kym-cdn.com%2Fphotos%2Fimages%2Fnewsfeed%2F002%2F414%2F472%2F7c7.jpg', '_blank'); return false;">
+                    <b>Pobierz prezentację</b>
+                </button>
+            </form>
+        </div>
+    </div>
+    <footer class="page-footer">
+        <p>FUTURE OFFICE CREATORS (FOCzki)</p>
+    </footer>
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        nav = document.querySelector("nav");
+        hamburger.onclick = function () {
+            nav.classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>
+

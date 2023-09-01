@@ -1,0 +1,91 @@
+{% load static %}
+<!doctype html>
+<html>
+     <head>
+          <meta charset="UTF-8" />
+          <title>SPOTKANIA</title>
+          <link rel="stylesheet" href="{%static 'css/strona.css'%}">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <script src="../custom-scripts.js" defer></script>
+     </head>
+     <body>
+        <header>
+            <div class="header-left">
+                <div class="logo">FOCzki</div>
+                <nav>
+                    <ul>
+                        <li><a class="active" href="/home/">HOME</a></li>
+                        <li><a href="/oNas/">O NAS</a></li>
+                        <li><a href="/oProjekcie/">O PROJEKCIE</a></li>
+                        <li><a href="/spotkania/">SPOTKANIA</a></li>
+                        <li><a href="/dokumenty/">DOKUMENTY</a></li>
+                        <li><a href="/galeria/">GALERIA</a></li>
+                        <li><a href="/kontakt/">KONTAKT</a></li>
+                    </ul>
+                    <div class="login-signup">
+                    </div>
+                </nav>
+            </div>
+            <div class="header-right">
+                <div class="login-signup">
+                </div>
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </header>
+        <script>
+            hamburger = document.querySelector(".hamburger");
+            nav = document.querySelector("nav");
+            hamburger.onclick = function() {
+                nav.classList.toggle("active");
+            }
+        </script>
+
+        <div class="spotkania">
+            <button class="spotkanie" id="spotkanie1">
+                26.04.2023 
+                <br>
+                Spotkanie 1: Zapoznanie się drużyny z opiekunem. Zlecenie przygotowania pomysłów na projekt.</button>
+                <br>
+            <button class="spotkanie" id="spotkanie2">
+                05.05.2023
+                <br>
+                Spotkanie 2: Przedstawienie członkom grupy pomysłów na projekt.</button>
+                <br>
+            <button class="spotkanie" id="spotkanie3">
+                12.05.2023
+                <br>
+                Spotkanie 3: Szczegółowe przedstawienie pomysłów opiekunowi. Omówienie plusów i minusów każdego z nich.</button>
+                <br>
+            <button class="spotkanie" id="spotkanie4">
+                16.05.2023 
+                <br>
+                Spotkanie 4: Grupowe głosowanie nad tematem projektu.</button>
+                <br>
+            <button class="spotkanie" id="spotkanie5">
+                01.06.2023
+                <br>
+                Spotkanie 5: Wstępne ustalenie szczegółów wybranego tematu wraz z podziałem pracy.</button>
+                <br>
+            <button class="spotkanie" id="spotkanie6">
+                15.06.2023
+                <br>
+                Spotkanie 6: Omawianie wyglądu projektu. Dobieranie odpowiednich komponentów do jego wykonania.</button>
+                <br>
+            <button class="spotkanie" id="spotkanie7">
+                18.06.2023
+                <br>
+                Spotkanie 7: Grupowe uzupełnienie sprawozdań za pierwszy semestr.</button>
+                <br>
+           
+        </div>
+
+            <footer class="page-footer">
+                <p>FUTURE OFFICE CREATORS (FOCzki)</p>
+            </footer>
+         
+     </body>
+</html>

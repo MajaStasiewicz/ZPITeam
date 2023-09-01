@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Cinzel+Decorative:wght@700;900&family=Lexend:wght@700&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;300&family=Akaya+Telivigala&family=Cinzel+Decorative:wght@700;900&family=Lexend:wght@700&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Cinzel+Decorative:wght@700;900&family=Lexend:wght@700&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;300&family=Akaya+Telivigala&family=Cinzel+Decorative:wght@700;900&family=Lexend:wght@700&family=Russo+One&display=swap');
+
+:root {
+    --primary-100: #DCDCDC;
+    --primary-200: #D3D3D3;
+    --primary-300: #C0C0C0;
+    --primary-400: #A9A9A9;
+    --primary-500: #808080;
+    --primary-600: #696969;
+    --primary-700: #778899;
+    --primary-800: #708090;
+    --primary-900: #2F4F4F;
+    --primary-1000: #000000;
+
+    --fontColor: var(--primary-1000);
+    --backgroundColor: var(--primary-100);
+    --bodyFont: 'Oswald', sans-serif;
+    --headerFont: 'Black Ops One', cursive;
+}
+
+body {
+    margin: 0;
+    color: var(--fontColor);
+    background-color: var(--backgroundColor);
+    font-family: var(--bodyFont);
+    line-height: 2rem;
+    width: 100%;
+    height: 100%;
+}
+
+.page-footer {
+    height: 4rem;
+    color: var(--fontColor);
+    font-family: var(--bodyFont);
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--primary-300);
+}
+
+/* KONTAKT */
+
+.kontakt {
+    margin-top: 200px;
+    text-align: center;
+    font-size: 30px; 
+    color: rgb(29, 28, 28);
+    font-family: 'Advent Pro', sans-serif;
+}
+
+/* SPOTKANIA */
+
+.spotkania {
+    margin-top: 10px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.spotkanie {
+    margin-top: 20px;
+    width: 300px;
+    height: 170px;
+    background-color: var(--primary-300);
+    border-color:black;
+    border-radius: 60px;
+}
+
+.spotkanie:hover {
+    background-color: rgb(193, 168, 168);
+}
+
+#spotkanie1, #spotkanie2, #spotkanie3, #spotkanie4, #spotkanie5, #spotkanie6, #spotkanie7 {
+    font-family: 'Advent Pro', sans-serif;
+    color:black;
+    font-size: 20px;
+}
+
+/* O NAS */
+
+.slide-content {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#slider {
+    margin-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    max-width: 100%;
+    text-align: center;
+}
+
+#slider input[type=radio] {
+    display: none;
+}
+
+#slider label {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#slides {
+    padding: 10px;
+    border: 3px solid #ccc;
+    background: #fff;
+    z-index: 1;
+}
+
+#overflow {
+    width: 100%;
+    overflow: hidden;
+}
+
+#slide1:checked ~ #slides .inner {
+    margin-left: 0;
+}
+
+#slide2:checked ~ #slides .inner {
+    margin-left: -100%;
+}
+
+#slide3:checked ~ #slides .inner {
+    margin-left: -200%;
+}
+
+#slide4:checked ~ #slides .inner {
+    margin-left: -300%;
+}
+
+#slide5:checked ~ #slides .inner {
+    margin-left: -400%;
+}
+
+#slide6:checked ~ #slides .inner {
+    margin-left: -500%;
+}
+
+#slides .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 600%;
+    /*line-height: 0;*/
+    height: 300px;
+}
+
+#slides .slide {
+    width: 16.66666666666667%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+}
+
+#slides .slide_1 {
+    background: #00171F;
+}
+
+#slides .slide_2 {
+    background: #773c6e;
+}
+
+#slides .slide_3 {
+    background: #3d96d1;
+}
+
+#slides .slide_4 {
+    background: #089181;
+}
+
+#slides .slide_5 {
+    background: #661010;
+}
+
+#slides .slide_6 {
+    background: #3f5135;
+}
+
+
+#controls {
+    margin: -180px 0 0 0;
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    position: relative;
+    background-size: cover;
+}
+
+#controls label {
+    transition: opacity 0.2s ease-out;
+    display: none;
+    width: 50px;
+    height: 50px;
+    opacity: .4;
+    background-size: cover;
+}
+
+#controls label:hover {
+    opacity: 1;
+}
+
+#slide1:checked ~ #controls label:nth-child(2),
+#slide2:checked ~ #controls label:nth-child(3),
+#slide3:checked ~ #controls label:nth-child(4),
+#slide4:checked ~ #controls label:nth-child(5),
+#slide5:checked ~ #controls label:nth-child(6),
+#slide6:checked ~ #controls label:nth-child(1) {
+    background: url(https://cdn-icons-png.flaticon.com/512/10079/10079695.png) no-repeat;
+    background-size: cover;
+    float: right;
+    margin: 0 -50px 0 0;
+    display: block;
+}
+
+#slide1:checked ~ #controls label:nth-last-child(2),
+#slide2:checked ~ #controls label:nth-last-child(3),
+#slide3:checked ~ #controls label:nth-last-child(4),
+#slide4:checked ~ #controls label:nth-last-child(5),
+#slide5:checked ~ #controls label:nth-last-child(6),
+#slide6:checked ~ #controls label:nth-last-child(1) {
+    background: url(https://cdn-icons-png.flaticon.com/512/10079/10079715.png) no-repeat;
+    background-size: cover;
+    float: left;
+    margin: 0 0 0 -50px;
+    display: block;
+}
+
+#bullets {
+    margin: 150px 0 0;
+    text-align: center;
+}
+
+#bullets label {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: #857575;
+    margin: 0 10px;
+} 
+
+#slide1:checked ~ #bullets label:nth-child(1),
+#slide2:checked ~ #bullets label:nth-child(2),
+#slide3:checked ~ #bullets label:nth-child(3),
+#slide4:checked ~ #bullets label:nth-child(4),
+#slide5:checked ~ #bullets label:nth-child(5),
+#slide5:checked ~ #bullets label:nth-child(6) {
+    background: #444;
+}
+
+@media screen and (max-width: 900px) {
+    #slide1:checked ~ #controls label:nth-child(2),
+    #slide2:checked ~ #controls label:nth-child(3),
+    #slide3:checked ~ #controls label:nth-child(4),
+    #slide4:checked ~ #controls label:nth-child(5),
+    #slide5:checked ~ #controls label:nth-child(6),
+    #slide6:checked ~ #controls label:nth-child(1),
+    #slide1:checked ~ #controls label:nth-last-child(2),
+    #slide2:checked ~ #controls label:nth-last-child(3),
+    #slide3:checked ~ #controls label:nth-last-child(4),
+    #slide4:checked ~ #controls label:nth-last-child(5),
+    #slide5:checked ~ #controls label:nth-last-child(6),
+    #slide6:checked ~ #controls label:nth-last-child(1) {
+        margin: 0;
+    }
+} 
+
+/* O PROJEKCIE */
+
+.opis1 {
+    font-family: 'Advent Pro', sans-serif;
+    color: black;
+    font-size: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+/* HOME */
+
+* {
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+}
+
+.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: bold;
+    font-family: 'Advent Pro', sans-serif;
+    margin-right: 50px;
+}
+
+nav ul {
+    float: right;
+    margin-right: auto;
+    font-family: 'Advent Pro', sans-serif;
+    margin-top: 0px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    font-family: 'Advent Pro', sans-serif;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a:hover {
+    background: #c7a9a9;
+    transition: .5s;
+}
+
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #2e1f28;
+}
+
+header .header-left {
+    display: flex;
+}
+
+nav .login-signup {
+    display: none;
+}
+header .header-right {
+    display: flex;
+    align-items: right;
+}
+header .login-signup {
+    display: none;
+}
+
+header .header-right .hamburger {
+    margin-left: 20px;
+    cursor: pointer;
+    display: none;
+}
+header .header-right .hamburger div {
+    width: 30px;
+    height: 2px;
+    margin: 6px 0;
+    /*margin-right: 10px;*/
+    background: #ffffff;
+}
+
+@media only screen and (max-width: 1000px) {
+    header {
+        padding: 0 20px;
+    }
+    header .header-right .hamburger {
+        display: block;
+    }
+    header .header-left nav {
+        margin: 0;
+        position: absolute;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: fit-content;
+        background-color:  #2e1f28;
+        padding: 30px;
+        transition: 0.3s;
+        text-align: center;
+        z-index: 1;
+    }
+    
+    header .header-left nav.active {
+        top: 70px;
+    }
+    header .header-left nav ul {
+        display: block;
+    }
+    a.active, a:hover {
+        background: #c7a9a9;
+        transition: .5s;
+    }
+}
+@media only screen and (max-width: 500px) {
+    nav .login-signup {
+        display: block;
+        margin-top: 20px;
+    }
+    header .header-right .login-signup {
+        display: none;
+    }
+    a.active, a:hover {
+        background: #c7a9a9;
+        transition: .5s;
+    }
+    
+}
+
+.opisHome {
+    font-family: 'Advent Pro', sans-serif;
+    color: black;
+    font-size: 30px;
+    margin-left: 65px;
+    margin-right: 65px;
+    margin-top: 120px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+/* DOKUMENTY */
+
+.opis {
+    font-family: 'Advent Pro', sans-serif;
+    color: black;
+    font-size: 30px;
+    margin-left: 65px;
+    margin-right: 65px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pobierz {
+    width: 200px;
+    height: 70px;
+    background-color: var(--primary-300);
+    border-color: black;
+    border-radius: 60px;
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.pobierz:hover {
+    background-color: rgb(141, 141, 141);
+}
+
+.btnbox {
+    height: 100px;
+    position: relative;
+    border: 0px solid green;
+    margin-bottom: 40px;
+}
+
+.btnbox2 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.dokheader {
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Advent Pro', sans-serif;
+}

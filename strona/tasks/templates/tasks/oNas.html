@@ -1,0 +1,137 @@
+{% load static %}
+
+<!doctype html>
+<html>
+     <head>
+          <meta charset="UTF-8" />
+          <title>O NAS</title>
+          <link rel="stylesheet" href="{%static 'css/strona.css'%}">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <script src="../custom-scripts.js" defer></script>
+     </head>
+     <body>
+        <header>
+            <div class="header-left">
+                <div class="logo">FOCzki</div>
+                <nav>
+                    <ul>
+                        <li><a class="active" href="/home/">HOME</a></li>
+                        <li><a href="/oNas/">O NAS</a></li>
+                        <li><a href="/oProjekcie/">O PROJEKCIE</a></li>
+                        <li><a href="/spotkania/">SPOTKANIA</a></li>
+                        <li><a href="/dokumenty/">DOKUMENTY</a></li>
+                        <li><a href="/galeria/">GALERIA</a></li>
+                        <li><a href="/kontakt/">KONTAKT</a></li>
+                    </ul>
+                    <div class="login-signup">
+                    </div>
+                </nav>
+            </div>
+            <div class="header-right">
+                <div class="login-signup">
+                </div>
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </header>
+        <script>
+            hamburger = document.querySelector(".hamburger");
+            nav = document.querySelector("nav");
+            hamburger.onclick = function() {
+                nav.classList.toggle("active");
+            }
+        </script>
+
+
+        <div id="slider">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+            <input type="radio" name="slider" id="slide4">
+            <input type="radio" name="slider" id="slide5">
+            <input type="radio" name="slider" id="slide6">
+            <div id="slides">
+                <div id="overflow">
+                    <div class="inner">
+                        <div class="slide slide_1">
+                            <div class="slide-content">
+                                <h2>Jakub Witkowski</h2>
+                                Interesuje się siatkówką, swoją przyszłość                           
+                                wiąże z tworzeniem gier komputerowych.                                                          
+                                Nie pogardzi dobrym serialem.                                                             
+                            </div>
+                        </div>
+
+                        <div class="slide slide_2">
+                            <div class="slide-content">
+                                <h2>Maja Stasiewicz</h2>
+                                Lubi rozwijać się w wielu dziedzinach artystycznych.
+                                Swoją przyszłość wiąże z tworzeniem gier komputerowych.
+                            </div>
+                        </div>
+
+                        <div class="slide slide_3">
+                            <div class="slide-content">
+                                <h2>Mateusz Urban</h2>
+                                Rybak, informatyk, przyszły milioner.
+                            </div>
+                        </div>
+
+                        <div class="slide slide_4">
+                            <div class="slide-content">
+                                <h2>Wojciech Błoński</h2>                               
+                                Malarz, tynkarz, akrobata.
+                            </div>
+                        </div>
+
+                        <div class="slide slide_5">
+                            <div class="slide-content">
+                                <h2>Patryk Rocławski</h2>
+                                Interesuje się sieciami oraz montażem komputerów.
+                                W wolnym czasie lubi obejrzeć dobry film,
+                                grać na komputerze oraz rysować.
+                            </div>
+                        </div>
+
+                        <div class="slide slide_6">
+                            <div class="slide-content">
+                                <h2>Radosław Cierpicki</h2>
+                                Lubi ASG, jego bronią jest replika snajperki Dragunova. 
+                                Widzi głównie na jedno oko, więc idealnie pasuje.
+                                Jego planem na przyszłość jest stworzenie ala Jarvisa.
+                            </div>
+                        </div>
+
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div id="controls">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+                <label for="slide4"></label>
+                <label for="slide5"></label>
+                <label for="slide6"></label>
+            </div>
+            <div id="bullets">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+                <label for="slide4"></label>
+                <label for="slide5"></label>
+                <label for="slide6"></label>
+            </div>
+        </div>
+
+
+
+            <footer class="page-footer">
+                <p>FUTURE OFFICE CREATORS (FOCzki)</p>
+            </footer>
+         
+     </body>
+</html>

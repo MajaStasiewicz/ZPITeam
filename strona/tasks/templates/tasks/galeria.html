@@ -1,0 +1,82 @@
+{% load static %}
+<!doctype html>
+<html>
+     <head>
+          <meta charset="UTF-8" />
+          <title>HOME</title>
+          <link rel="stylesheet" href="{%static 'css/strona.css'%}">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <script src="../custom-scripts.js" defer></script>
+     </head>
+     <body>
+
+        <header>
+            <div class="header-left">
+                <div class="logo">FOCzki</div>
+                <nav>
+                    <ul>
+                        <li><a class="active" href="/home/">HOME</a></li>
+                        <li><a href="/oNas/">O NAS</a></li>
+                        <li><a href="/oProjekcie/">O PROJEKCIE</a></li>
+                        <li><a href="/spotkania/">SPOTKANIA</a></li>
+                        <li><a href="/dokumenty/">DOKUMENTY</a></li>
+                        <li><a href="/galeria/">GALERIA</a></li>
+                        <li><a href="/kontakt/">KONTAKT</a></li>
+                    </ul>
+                    <div class="login-signup">
+                    </div>
+                </nav>
+            </div>
+            <div class="header-right">
+                <div class="login-signup">
+                </div>
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </header>
+        <script>
+            hamburger = document.querySelector(".hamburger");
+            nav = document.querySelector("nav");
+            hamburger.onclick = function() {
+                nav.classList.toggle("active");
+            }
+        </script>
+
+
+        <footer class="page-footer">
+            <p>FUTURE OFFICE CREATORS (FOCzki)</p>
+        </footer>
+     </body>
+</html>
+
+
+
+
+
+        <!-- <nav class="navbar">
+            <div class="nav-center">
+                <div class="nav-header">
+                    <button class="btn nav-btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+                <div class="nav-links">
+                    <a class="nav-link" href="/home/">HOME</a>
+                    <a class="nav-link" href="/oNas/">O NAS</a>
+                    <a class="nav-link" href="/oProjekcie/">O PROJEKCIE</a>
+                    <a class="nav-link" href="/spotkania/">SPOTKANIA</a>
+                    <a class="nav-link" href="/dokumenty/">DOKUMENTY</a>
+                    <a class="nav-link" href="/kontakt/">KONTAKT</a>
+                </div>
+            </div>
+        </nav>
+
+            <footer class="page-footer">
+                <p>FUTURE OFFICE CREATORS (FOCzki)</p>
+            </footer>
+         
+     </body>
+</html>
